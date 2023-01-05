@@ -1,0 +1,9 @@
+{
+  "name": "labs-2",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "fastify": "^4.11.0"
+  }
+}

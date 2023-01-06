@@ -10,7 +10,7 @@ Each service is a [Fastify
 plugin](https://www.fastify.io/docs/latest/Plugins/), it is
 encapsulated (it can have its own independent plugins) and it is
 typically stored in a file; be careful to group your routes logically,
-e.g. all `/users` routes in a `users.js` file. We have added
+e.g. all `/users` routes in a `hello.js` file. We have added
 a `root.js` file for you with a '/' root added.
 
 If a single file become too large, create a folder and add a `index.js` file there:

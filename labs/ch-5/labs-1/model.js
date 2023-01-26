@@ -1,20 +1,8 @@
 /* eslint-disable */
-module.exports = {
-  boat: boatModel(),
-};
-
 function boatModel() {
   const db = {
     1: { brand: 'Chaparral', color: 'red' },
     2: { brand: 'Chaparral', color: 'blue' },
-  };
-
-  return {
-    uid,
-    create,
-    read,
-    update,
-    del,
   };
 
   function uid() {
@@ -37,9 +25,7 @@ function boatModel() {
   }
 
   function read(id, cb) {
-    if (id === 'c060') {
-      setImmediate(() => cb(Error('unknown')));
-    }
+    // eslint-disable-next-line no-prototype-builtins
     if (!(db.hasOwnProperty(id))) {
       const err = Error('not found');
       err.code = 'E_NOT_FOUND';
@@ -70,4 +56,16 @@ function boatModel() {
     delete db[id];
     setImmediate(() => cb());
   }
+
+  return {
+    uid,
+    create,
+    read,
+    update,
+    del,
+  };
 }
+
+module.exports = {
+  boat: boatModel(),
+};

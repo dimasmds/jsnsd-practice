@@ -2,9 +2,12 @@
   "name": "labs-1",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "echo \"Error: start script not specified\" && exit 1"
+    "start": "node app.js"
   },
   "keywords": [],
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@hapi/h2o2": "^10.0.0",
+    "@hapi/hapi": "^21.2.1"
+  }
 }
